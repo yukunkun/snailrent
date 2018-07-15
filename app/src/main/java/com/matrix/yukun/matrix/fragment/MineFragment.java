@@ -1,15 +1,9 @@
 package com.matrix.yukun.matrix.fragment;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -18,11 +12,8 @@ import com.matrix.yukun.matrix.R;
 import com.matrix.yukun.matrix.adapter.LVAdapter;
 import com.matrix.yukun.matrix.selfview.MyListView;
 import com.matrix.yukun.matrix.util.ActivityUtils;
-
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 import de.hdodenhof.circleimageview.CircleImageView;
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
@@ -55,7 +46,6 @@ public class MineFragment extends BaseFragment {
     @BindView(R.id.scrollview)
     ScrollView mScrollView;
     private String PATH="http://sj.qq.com/myapp/detail.htm?apkName=com.matrix.yukun.matrix";
-
     public static MineFragment getInstance() {
         MineFragment mineFragment = new MineFragment();
         return mineFragment;

@@ -98,7 +98,7 @@
         android:name=".MyApp"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/tool_app_ic"
+        android:icon="@mipmap/snial_image"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
