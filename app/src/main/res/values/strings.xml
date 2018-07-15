@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">蜗牛租客</string>
+    <array name="setting">
+        <item>聊天机器人</item>
+        <item>反馈建议</item>
+        <item>软件评分</item>
+        <item>版本更新</item>
+        <item>关于我们</item>
+    </array>
+</resources>

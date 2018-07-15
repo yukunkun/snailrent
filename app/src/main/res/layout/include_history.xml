@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:id="@+id/ll_history"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/icon_history"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="历史记录"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/color_bfbfbf"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon_collect" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的收藏"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/color_bfbfbf"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/icon_my_send"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的发布"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/color_bfbfbf"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

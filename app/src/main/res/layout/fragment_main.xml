@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_whit"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/sm_layout"
+        app:srlAccentColor="@color/colorPrimary"
+        app:srlPrimaryColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout
+        android:paddingTop="35dp"
+        android:id="@+id/rl_header"
+        android:visibility="gone"
+        android:background="@color/color_whit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:background="@drawable/selector_search_header"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_header_search"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="搜索点什么吧"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_8a8a8a"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/ll_search"
+            android:src="@mipmap/icon_header_search"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_whit"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:clickable="true"
+                android:layout_gravity="end"
+                android:src="@mipmap/icon_setting"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_head"
+                app:civ_border_color="@color/color_8a8a8a"
+                app:civ_border_width="2dp"
+                android:src="@mipmap/tool_app_ic"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_edit"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_width="wrap_content"
+                android:text="@string/app_name"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"
+                android:textColor="@color/color_8a8a8a"
+                android:layout_width="match_parent"
+                android:text="18200299278"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/include_line"/>
+
+            <include layout="@layout/include_history" />
+            <include layout="@layout/include_line"/>
+            <LinearLayout
+                android:id="@+id/ll_adv"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+            </LinearLayout>
+            <include layout="@layout/include_line"/>
+            <com.matrix.yukun.matrix.selfview.MyListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_logout"
+                android:text="退 出"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/color_whit"
+                android:gravity="center"
+                android:background="@drawable/selector_feedback"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="180dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

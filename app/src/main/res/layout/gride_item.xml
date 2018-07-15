@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <ImageView
+        android:id="@+id/image"
+        android:transitionName="share"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="6dp"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+    <RelativeLayout
+        android:id="@+id/real_play"
+        android:visibility="gone"
+        android:background="@color/color_000000_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/play_name"
+        android:text=""
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_whit"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/play_time"
+        android:text=""
+        android:maxLines="1"
+        android:layout_below="@id/play_name"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_whit"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

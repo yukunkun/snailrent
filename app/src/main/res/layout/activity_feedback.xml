@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.matrix.yukun.matrix.activity.FeedbackActivity">
+    <include layout="@layout/include_line_no_marg"/>
+    <EditText
+        android:id="@+id/et_con"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/color_ededed"
+        android:gravity="start"
+        android:hint="请输入您的建议"
+        android:padding="10dp"
+        android:textColor="@color/color_2c2c2c" />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_ededed"
+        android:hint="请输入您的联系方式"
+        android:padding="10dp"
+        android:textColor="@color/color_2c2c2c" />
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="200dp"
+        android:text="反 馈"
+        android:gravity="center"
+        android:textColor="@color/color_whit"
+        android:textSize="18sp"
+        android:background="@drawable/selector_feedback"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp" />
+</LinearLayout>
