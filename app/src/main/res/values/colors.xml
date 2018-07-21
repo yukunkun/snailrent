@@ -53,9 +53,11 @@
     <color name="color_e4e4e4">#efefef</color>
     <color name="color_514b4b4b">#514b4b4b</color>
     <color name="color_ededed">#ededed</color>
+    <color name="color_4b000000">#61000000</color>
 
-
-
-
+    <color name="calendar_bg_color">#FFFFFF</color>
+    <color name="holiday_text_color">#9082BD</color>
+    <color name="select_circle_color">#FF8594</color>
+    <color name="colorBackground">#F0F1F5</color>
 
 </resources>

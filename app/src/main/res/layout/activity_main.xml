@@ -40,6 +40,16 @@
             android:text="搜索"
             android:gravity="center"
             android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/calandar"
+            android:text="日历"
+            android:drawableTop="@drawable/selector_calandar"
+            android:textColor="@drawable/selector_index_color"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
         <RadioButton android:layout_width="0dp"
             android:layout_weight="1"
             android:button="@null"
@@ -49,14 +59,6 @@
             android:textColor="@drawable/selector_index_color"
             android:gravity="center"
             android:layout_height="wrap_content"/>
-        <RadioButton android:layout_width="0dp"
-            android:layout_weight="1"
-            android:button="@null"
-            android:id="@+id/send"
-            android:text="发布"
-            android:drawableTop="@mipmap/icon_send"
-            android:textColor="@color/color_8a8a8a"
-            android:gravity="center"
-            android:layout_height="wrap_content"/>
+
     </RadioGroup>
 </RelativeLayout>

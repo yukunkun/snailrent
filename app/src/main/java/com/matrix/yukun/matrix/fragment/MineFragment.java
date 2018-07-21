@@ -74,7 +74,8 @@ public class MineFragment extends BaseFragment {
                 }else if(position==1){
                     ActivityUtils.startFeedbackActivity(getContext());
                 }else if(position==2){
-                    ActivityUtils.startUriSearch(getContext());
+                    CommentDialog commentDialog=CommentDialog.getInstance();
+                    commentDialog.show(getChildFragmentManager(),"");
                 }else if(position==3){
                     ActivityUtils.startAPPDownload(getContext(),PATH);
                 }else if(position==4){

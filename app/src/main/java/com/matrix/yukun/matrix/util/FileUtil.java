@@ -76,7 +76,7 @@ public class FileUtil {
         }
         try {
             FileOutputStream out = new FileOutputStream(f);
-            bm.compress(Bitmap.CompressFormat.PNG, 0, out); //0 压缩率 30 是压缩率，表示压缩70%;
+            bm.compress(Bitmap.CompressFormat.PNG, 80, out); //0 压缩率 30 是压缩率，表示压缩70%;
             out.flush();
             out.close();
 

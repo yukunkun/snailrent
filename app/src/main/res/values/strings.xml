@@ -7,4 +7,14 @@
         <item>版本更新</item>
         <item>关于我们</item>
     </array>
+    <string-array name="calendar_week">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
 </resources>

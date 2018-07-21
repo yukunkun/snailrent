@@ -15,6 +15,7 @@ import android.widget.RadioGroup;
 
 import com.matrix.yukun.matrix.BaseActivity;
 import com.matrix.yukun.matrix.R;
+import com.matrix.yukun.matrix.fragment.CalandarFragment;
 import com.matrix.yukun.matrix.fragment.MainFragment;
 import com.matrix.yukun.matrix.fragment.MineFragment;
 import com.matrix.yukun.matrix.fragment.SearchFragment;
@@ -73,9 +74,13 @@ public class MainActivity extends BaseActivity {
                         ((RadioButton) (mRg.getChildAt(1))).setChecked(true);
                         show(1);
                         break;
-                    case R.id.me:
+                    case R.id.calandar:
                         ((RadioButton) (mRg.getChildAt(2))).setChecked(true);
                         show(2);
+                        break;
+                    case R.id.me:
+                        ((RadioButton) (mRg.getChildAt(3))).setChecked(true);
+                        show(3);
                         break;
                 }
             }
@@ -105,8 +110,10 @@ public class MainActivity extends BaseActivity {
         MainFragment mainFragment= MainFragment.getInstance();
         SearchFragment searchFragment=SearchFragment.getInstance();
         MineFragment mineFragment=MineFragment.getInstance();
+        CalandarFragment calandarFragment=CalandarFragment.getInstance();
         mFragmentList.add(mainFragment);
         mFragmentList.add(searchFragment);
+        mFragmentList.add(calandarFragment);
         mFragmentList.add(mineFragment);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
