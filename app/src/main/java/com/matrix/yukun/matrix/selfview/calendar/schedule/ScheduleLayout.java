@@ -146,6 +146,7 @@ public class ScheduleLayout extends FrameLayout {
         @Override
         public void onPageChange(int year, int month, int day) {
             computeCurrentRowsIsSix(year, month);
+            mOnCalendarClickListener.onPageChange(year,month,day);
         }
     };
 

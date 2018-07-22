@@ -81,4 +81,6 @@ dependencies {
     compile files('libs/Sunflower.jar')
     implementation files('libs/pinyin4j-2.5.0.jar')
     implementation 'joda-time:joda-time:2.9.4'
+    compile 'org.litepal.android:core:1.6.0'
+
 }

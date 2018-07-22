@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
+import com.matrix.yukun.matrix.activity.CalandarActivity;
 import com.matrix.yukun.matrix.activity.CoverActivity;
 import com.matrix.yukun.matrix.activity.FeedbackActivity;
 import com.matrix.yukun.matrix.activity.PositionActivity;
@@ -63,5 +64,10 @@ public class ActivityUtils {
                 return info.processName;//返回包名
         }
         return "";
+    }
+
+    public static void startCalandarActivity(Context context){
+        Intent intent=new Intent(context, CalandarActivity.class);
+        context.startActivity(intent);
     }
 }

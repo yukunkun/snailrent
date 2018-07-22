@@ -152,7 +152,8 @@
         <activity android:name=".ToolBarActivity" />
         <activity android:name=".activity.SettingActivity" />
         <activity android:name=".activity.CoverActivity" />
-        <activity android:name=".activity.FeedbackActivity"></activity>
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.CalandarActivity"></activity>
     </application>
 
 </manifest>

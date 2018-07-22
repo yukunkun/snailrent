@@ -10,12 +10,14 @@ import com.iflytek.cloud.SpeechUtility;
 import com.tencent.bugly.Bugly;
 import com.tencent.bugly.beta.Beta;
 
+import org.litepal.LitePalApplication;
+
 import java.util.List;
 
 /**
  * Created by yukun on 17-1-24.
  */
-public class MyApp extends Application {
+public class MyApp extends LitePalApplication {
     public  static MyApp myApp;
     @Override
     public void onCreate() {
