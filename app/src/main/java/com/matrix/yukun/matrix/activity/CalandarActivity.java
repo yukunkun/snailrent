@@ -1,17 +1,13 @@
 package com.matrix.yukun.matrix.activity;
 
 
-import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.LinearLayout;
 
 import com.matrix.yukun.matrix.R;
 import com.matrix.yukun.matrix.ToolBarActivity;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class CalandarActivity extends ToolBarActivity implements SwipeRefreshLayout.OnRefreshListener {
 

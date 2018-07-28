@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="租房"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/color_2c2c2c"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <include layout="@layout/include_line_no_marg"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/ll_header_main_search"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="280dp"
+            android:background="@drawable/shape_search_bg"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:padding="8dp"
+                android:src="@mipmap/icon_search"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="40dp" />
+            <View
+                android:layout_width="2dp"
+                android:layout_marginLeft="0dp"
+                android:background="@color/color_b1697ffa"
+                android:layout_gravity="center_vertical"
+                android:layout_height="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="选择您需要的"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_8a8a8a"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:text="@string/fangshi"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_all_rent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/color_2c2c2c"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/all_rent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_harf_rent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/tv_all_rent"
+                    android:textColor="@color/color_2c2c2c"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/harf_rent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:text="@string/price"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:text="0元-1000元"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:text="@string/house_box"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/color_2c2c2c"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:text="@string/pinpai"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

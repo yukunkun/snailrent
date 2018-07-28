@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">蜗牛租客</string>
+    <string name="fangshi">方式</string>
+    <string name="all_rent">整租</string>
+    <string name="harf_rent">合租</string>
+    <string name="price">价格</string>
+    <string name="house_box">户型</string>
+    <string name="pinpai">品牌</string>
     <array name="setting">
         <item>聊天机器人</item>
         <item>反馈建议</item>
